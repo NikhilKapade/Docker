@@ -1,10 +1,17 @@
 # Docker Commands
 
-Some of the most commonly used docker commands are 
+Some of the most commonly used docker commands are given below.
 
-### docker images
+## check docker version
+docker --version
 
-Lists docker images on the host machine.
+## list all images
+docker images
+
+### Count number of images
+docker images -q | wc -l
+
+###
 
 ### docker build
 
