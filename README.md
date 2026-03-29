@@ -1,9 +1,3 @@
-# Repo to learn Docker with examples. Contributions are most welcome.
-
-## If you found this repo useful, give it a STAR 🌠
-
-You can watch the video version of this repo on my youtube playlist. -> https://www.youtube.com/watch?v=7JZP345yVjw&list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC
-
 
 ## What is a container ?
 
@@ -230,7 +224,7 @@ In the above command `ubuntu` is the name of the user, you can change the userna
 **NOTE:** : You need to logout and login back for the changes to be reflected.
 
 
-### Docker is Installed, up and running 🥳🥳
+### Docker is Installed, up and running
 
 Use the same command again, to verify that docker is up and running.
 
@@ -359,4 +353,4 @@ c5ff2d88f679: Mounted from library/ubuntu
 latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb8221b1d88 size: 1157
 ```
 
-### You must be feeling like a champ already 
+
