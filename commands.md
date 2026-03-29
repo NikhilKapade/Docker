@@ -1,25 +1,22 @@
 # Docker Commands
-
 Some of the most commonly used docker commands are given below.
 
-## check docker version
-docker --version
+### check docker version
+`docker --version`
 
-## list all images
-docker images
+### list all images
+`docker images`
 
 ### Count number of images
-docker images -q | wc -l
+`docker images -q | wc -l`
 
-###
+`-q` -> Show only image IDs. `|`  ->(pipe) Take output and send it to right. `wc -l`   -> Count number of lines. 
 
 ### docker build
-
 Builds image from Dockerfile.
 
-### docker run
-
-Runs a Docker container. 
+### run a container
+`docker run <image-name>` 
 
 There are many arguments which you can pass to this command for example,
 
@@ -28,29 +25,27 @@ There are many arguments which you can pass to this command for example,
 
 use `docker run --help` to look into more arguments.
 
-### docker ps
+### Lists running containers on the host machine.
+`docker ps` OR `docker ps -q | wc -l`
 
-Lists running containers on the host machine.
+### List of all containers (Running, stopped, created, paused)
+`docker ps -a`
 
-### docker stop
-
-Stops running container.
+### stop running container
+`docker stop` OR `control + c`
 
 ### docker start
-
 Starts a stopped container.
 
 ### docker rm
 
 Removes a stopped container.
 
-### docker rmi
+### Remove (delete) an image from the host machine
+`docker rmi <image_name_or_id>`
 
-Removes an image from the host machine.
-
-### docker pull
-
-Downloads an image from the configured registry.
+### Downloads an image from the configured registry
+`docker pull <image_name>`
 
 ### docker push
 
