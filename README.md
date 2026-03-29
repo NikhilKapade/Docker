@@ -1,11 +1,15 @@
 
 ## What is a container ?
+A container is a lightweight, standalone unit of software that packages an application along with its dependencies, libraries, and configuration, so it can run consistently across different environments.
 
-A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
+A container is a running instance of a Docker image, created from that image to execute an application in an isolated environment.
 
-Ok, let me make it easy !!!
+Containers use the system’s OS kernel instead of installing a full operating system, so they are faster and use less memory.
 
-A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
+Containers require the same OS kernel as the host system because they share the kernel.
+For example, Linux containers run on a Linux kernel.
+On Windows or Mac, tools like WSL or virtualization are used to provide a compatible kernel.
+
 
 ![Screenshot 2023-02-07 at 7 18 10 PM](https://user-images.githubusercontent.com/43399466/217262726-7cabcb5b-074d-45cc-950e-84f7119e7162.png)
 
@@ -20,8 +24,8 @@ Containers and virtual machines are both technologies used to isolate applicatio
     2. Portability: Containers are designed to be portable and can run on any system with a compatible host operating system. VMs are less portable as they need a compatible hypervisor to run.
 
     3. Security: VMs provide a higher level of security as each VM has its own operating system and can be isolated from the host and other VMs. Containers provide less isolation, as they share the host operating system.
-
-   4.  Management: Managing containers is typically easier than managing VMs, as containers are designed to be lightweight and fast-moving.
+    
+    4. Management: Managing containers is typically easier than managing VMs, as containers are designed to be lightweight and fast-moving.
 
 
 
@@ -164,7 +168,7 @@ https://docs.docker.com/get-docker/
 
 For Demo, 
 
-You can create an Ubuntu EC2 Instance on AWS and run the below commands to install docker.
+You can create an Linux EC2 Instance on AWS and run the below commands to install docker.
 
 ```
 sudo apt update
