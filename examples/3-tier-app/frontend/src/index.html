@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h2>🍔 Foodie</h2>
+  <div>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('cart')">Cart</button>
+    <button onclick="showPage('orders')">Orders</button>
+  </div>
+</nav>
+
+<div id="loader" class="loader">Loading...</div>
+
+<div id="home" class="page">
+  <div class="container" id="food-list"></div>
+</div>
+
+<div id="cart-page" class="page hidden">
+  <h2>🛒 Cart</h2>
+  <ul id="cart"></ul>
+</div>
+
+<div id="orders" class="page hidden">
+  <h2>📦 Orders</h2>
+  <p>No orders yet</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
