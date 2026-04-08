@@ -10,6 +10,20 @@ Containers require the same OS kernel as the host system because they share the 
 For example, Linux containers run on a Linux kernel.
 On Windows or Mac, tools like WSL or virtualization are used to provide a compatible kernel.
 
+### What is the kernel and what is its purpose?
+Kernel is the core part of an operating system that acts as a bridge between software (applications) and hardware.
+
+It controls system resources such as the CPU, memory, and devices, ensuring that multiple programs can run efficiently and safely at the same time. The kernel handles process scheduling, allocates and frees memory, manages input and output operations, and enforces security and access permissions. By acting as an intermediary between applications and the physical hardware, the kernel ensures that programs do not directly access hardware in an unsafe way, maintaining system stability and performance.
+
+### What is containerization?
+Containerization means packaging an application along with all its dependencies (libraries, runtime, configs) into a single, portable unit called a container so it can run consistently anywhere.
+
+#### List of popular containerization tools
+1. Docker (most popular)
+2. Podman
+3. containerd
+4. CRI (Container Runtime Interface)-O 
+
 
 ![Screenshot 2023-02-07 at 7 18 10 PM](https://user-images.githubusercontent.com/43399466/217262726-7cabcb5b-074d-45cc-950e-84f7119e7162.png)
 
@@ -166,15 +180,21 @@ A very detailed instructions to install Docker are provide in the below link
 
 https://docs.docker.com/get-docker/
 
-For Demo, 
-
-You can create an Linux EC2 Instance on AWS and run the below commands to install docker.
+For Demo, You can create an Linux EC2 Instance on AWS and run the below commands to install docker.
 
 ```
-sudo apt update
-sudo apt install docker.io -y
+sudo yum update -y
+sudo yum install docker -y
 ```
-
+### Check whether docker is installed or not
+For quick check
+```
+docker --version
+```
+For full details
+```
+docker version
+```
 
 ### Start Docker and Grant Access
 
