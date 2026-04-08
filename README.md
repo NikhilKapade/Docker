@@ -377,4 +377,24 @@ c5ff2d88f679: Mounted from library/ubuntu
 latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb8221b1d88 size: 1157
 ```
 
-
+### Docker file instructions list
+1. ```FROM``` → Choose the starting image (base system)
+2. ```RUN``` → Install or set up things inside the container
+3. ```CMD``` → Tell the container what to do when it starts
+4. ```COPY``` → Put your files into the container
+5. ```ADD``` → Same as copy, but can also unzip files
+6. ```WORKDIR``` → Set the working folder (like using cd)
+7. ```ENV``` → Set variables (like settings/config)
+8. ```ARG``` → Temporary variables used during build only
+9. ```SHELL``` → Change how commands are executed (like using bash)
+10. ```USER``` → Choose which user runs the container
+11. ```ENTRYPOINT``` → Main command that always runs
+12. ```EXPOSE``` → Tell which port your app uses
+13. ```VOLUME``` → Save data so it is not lost
+14. ```LABEL``` → Add extra info (like name, version)
+15. ```HEALTHCHECK``` → Check if your app is working
+16. ```STOPSIGNAL``` → Tell how to stop the container
+17. ```ONBUILD``` → Run automatically when used by another image
+18. ```COPY``` --from → Copy files from another build step
+19. ```FROM --platform``` → Choose system type (like Intel/ARM)
+20. ```RUN --mount``` → Use cache to make build faster
