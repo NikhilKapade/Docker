@@ -45,6 +45,7 @@ docker run [OPTIONS] <image-name> [COMMAND]
 **Example**: 
 ```
 docker run -dt ubuntu
+docker run -it ubuntu
 docker run ubuntu
 ```
 
@@ -61,6 +62,21 @@ docker run ubuntu
 
 `-t` --> Gives a terminal screen.
 
+
+
+**Port Mapping** 
+
+**Syntax**:
+```
+docker run -p [Host_Port]:[Container_Port] Image
+```
+
+**Example**:
+```
+docker run -dt -p 81:80 nginx
+```
+
+`81` (host) → `80` (container)
 
 ### 5. docker ps
 `docker ps` is used to list running containers on your system.
@@ -135,4 +151,18 @@ docker rm [OPTIONS] <container-id>
 **Example**:
 ```
 docker rm 36f8656430d8
+```
+
+#### docker rmi image
+It is used to remove docker image.
+
+**Syntax**:
+```
+docker rmi IMAGE
+docker image prune -a
+```
+
+**Example**:
+```
+docker rmi nginx
 ```
